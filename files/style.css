@@ -1728,3 +1728,269 @@ there.
 
 /* Larger than Desktop HD */
 @media (min-width: 1200px) {}
+
+
+/* Blog Styles
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.blog-container {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+}
+
+.blog-header {
+  margin-bottom: 4rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #2a2a2a;
+}
+
+.blog-header h1 {
+  color: rgb(255, 242, 242);
+  font-size: 3.6rem;
+  margin-bottom: 0.8rem;
+  font-weight: 200;
+  letter-spacing: -0.02em;
+}
+
+.blog-subtitle {
+  color: #666;
+  font-size: 1.5rem;
+}
+
+.blog-subtitle a {
+  color: #888;
+  transition: color 0.3s ease;
+}
+
+.blog-subtitle a:hover {
+  color: #3ba157;
+}
+
+.blog-nav {
+  color: #666;
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+
+.blog-nav a {
+  color: #888;
+  transition: color 0.3s ease;
+}
+
+.blog-nav a:hover {
+  color: #3ba157;
+}
+
+.blog-posts {
+  margin-top: 1rem;
+}
+
+.blog-post-preview {
+  background: linear-gradient(135deg, #1e1e1e 0%, #232323 100%);
+  border: 1px solid #2a2a2a;
+  border-radius: 8px;
+  padding: 2.4rem 2.8rem;
+  margin-bottom: 2rem;
+  transition: transform 0.2s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.blog-post-preview:hover {
+  transform: translateY(-2px);
+  border-color: #3a3a3a;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+}
+
+.blog-post-preview h2 {
+  margin: 0 0 0.8rem 0;
+  font-size: 2.2rem;
+  font-weight: 200;
+}
+
+.blog-post-preview h2 a {
+  color: #fff;
+  transition: color 0.3s ease;
+}
+
+.blog-post-preview h2 a:hover {
+  color: #3ba157;
+}
+
+.blog-date {
+  color: #666;
+  font-size: 1.2rem;
+  margin-bottom: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.blog-excerpt {
+  color: #999;
+  font-size: 1.5rem;
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+}
+
+.read-more {
+  display: inline-block;
+  font-size: 1.3rem;
+  color: #9abde3;
+  padding: 0.6rem 0;
+  transition: color 0.3s ease;
+}
+
+.read-more:hover {
+  color: #3ba157;
+}
+
+.read-more::after {
+  content: " →";
+  transition: transform 0.2s ease;
+}
+
+/* Individual blog post styles */
+.blog-post {
+  margin-top: 1rem;
+}
+
+.blog-post h1 {
+  color: rgb(255, 242, 242);
+  font-size: 3.4rem;
+  margin-bottom: 0.8rem;
+  font-weight: 200;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+}
+
+.blog-post .blog-date {
+  margin-bottom: 3rem;
+}
+
+.blog-content {
+  margin-top: 2rem;
+  font-size: 1.7rem;
+  line-height: 1.9;
+  color: #c3c3c3;
+}
+
+.blog-content p {
+  margin-bottom: 2rem;
+}
+
+.blog-content h2 {
+  color: #fff;
+  font-size: 2.4rem;
+  margin-top: 3rem;
+  margin-bottom: 1.5rem;
+  font-weight: 200;
+}
+
+.blog-content h3 {
+  color: #fff;
+  font-size: 2rem;
+  margin-top: 2.5rem;
+  margin-bottom: 1.2rem;
+  font-weight: 200;
+  margin-left: 0;
+}
+
+.blog-content ul,
+.blog-content ol {
+  margin-left: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.blog-content li {
+  margin-bottom: 1rem;
+  line-height: 1.7;
+}
+
+.blog-content blockquote {
+  border-left: 3px solid #3ba157;
+  margin: 2rem 0;
+  padding: 1rem 2rem;
+  background: #1e1e1e;
+  border-radius: 0 6px 6px 0;
+  font-style: italic;
+  color: #aaa;
+}
+
+.blog-content code {
+  background: #1e1e1e;
+  padding: 0.2rem 0.6rem;
+  border-radius: 4px;
+  font-size: 0.9em;
+  color: #e5ffdb;
+}
+
+.blog-content pre {
+  background: #1a1a1a;
+  border: 1px solid #2a2a2a;
+  border-radius: 6px;
+  padding: 1.5rem;
+  overflow-x: auto;
+  margin: 2rem 0;
+}
+
+.blog-content pre code {
+  background: none;
+  padding: 0;
+}
+
+.blog-content a {
+  color: #9abde3;
+  text-decoration: underline;
+  text-decoration-color: rgba(154, 189, 227, 0.3);
+  text-underline-offset: 2px;
+  transition: text-decoration-color 0.3s ease;
+}
+
+.blog-content a:hover {
+  text-decoration-color: #3ba157;
+  color: #3ba157;
+}
+
+.blog-content img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 6px;
+  margin: 2rem 0;
+}
+
+.blog-footer {
+  margin-top: 5rem;
+  padding-top: 2rem;
+  border-top: 1px solid #2a2a2a;
+}
+
+.blog-footer a {
+  font-size: 1.4rem;
+  color: #888;
+  transition: color 0.3s ease;
+}
+
+.blog-footer a:hover {
+  color: #3ba157;
+}
+
+/* Blog responsive */
+@media (max-width: 600px) {
+  .blog-container {
+    padding: 2rem 1.5rem;
+  }
+
+  .blog-header h1 {
+    font-size: 2.8rem;
+  }
+
+  .blog-post h1 {
+    font-size: 2.6rem;
+  }
+
+  .blog-post-preview {
+    padding: 2rem;
+  }
+
+  .blog-content {
+    font-size: 1.6rem;
+  }
+}
