@@ -638,26 +638,163 @@ div.rightcol {
   line-height: 110%;
 }
 
-@media all and (min-width:50px) and (max-width: 768px) {
-  div.rightcol {
-    /*clear:right;*/
-    float: left;
-    width: 22%;
-    font-size: 80%;
-    padding-top: 10%;
-    padding-left: 2%;
-    padding-right: 5%;
-  }
-
-  div.underimage {
-    padding-left: .5rem;
-  }
-}
-
 div.leftcol {
-  /*clear:left;*/
   float: left;
   width: 70%;
+}
+
+/* Mobile card - hidden on desktop */
+.mobile-card,
+.mobile-icons {
+  display: none;
+}
+
+.desktop-sidebar {
+  display: block;
+}
+
+@media all and (max-width: 768px) {
+  /* Show mobile elements, hide desktop */
+  .mobile-card {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+  }
+
+  .mobile-card-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+
+  .mobile-icons {
+    display: flex;
+    gap: 1.2rem;
+    flex-shrink: 0;
+  }
+
+  .mobile-icons a {
+    color: #666;
+    font-size: 1.3rem;
+    transition: color 0.3s ease;
+  }
+
+  .mobile-icons a:hover {
+    color: #3ba157;
+  }
+
+  .desktop-sidebar {
+    display: none;
+  }
+
+  .mobile-avatar {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    object-fit: cover;
+    padding: 0;
+    margin: 0;
+    float: none;
+  }
+
+  .mobile-card-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+    flex: 1;
+    min-width: 0;
+  }
+
+  .mobile-card-name {
+    color: rgb(255, 242, 242);
+    font-size: 1.8rem;
+    font-weight: 200;
+  }
+
+  .mobile-card-role {
+    color: #888;
+    font-size: 1.2rem;
+  }
+
+  div.rightcol {
+    float: none;
+    width: 100%;
+    max-width: 100%;
+    padding: 1.2rem 1.5rem;
+    border-bottom: 1px solid #2a2a2a;
+    margin-bottom: 0;
+    padding-top: 1.5rem;
+    box-sizing: border-box;
+  }
+
+  .mobile-card {
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+  .mobile-card-row {
+    max-width: 100%;
+    min-width: 0;
+  }
+
+  .mobile-card-role {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    min-width: 0;
+  }
+
+  div.leftcol {
+    float: none;
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .headline {
+    padding: 1.5rem 1.5rem;
+    font-size: 1.6rem;
+  }
+
+  .headline > p[style] {
+    display: none;
+  }
+
+  h3 {
+    margin-left: 1.5rem;
+    font-size: 2.2rem;
+  }
+
+  .news {
+    padding-left: 1.5rem;
+    width: 95%;
+    font-size: 1.4rem;
+  }
+
+  .padleft {
+    padding-left: 1.5rem;
+  }
+
+  hr {
+    margin-left: 1.5rem;
+  }
+
+  #contact {
+    margin-top: 2rem;
+  }
+
+  .contactpad {
+    padding-left: 1.5rem;
+    margin-top: 2rem;
+  }
+
+  .button {
+    margin-left: 1.5rem;
+  }
+
+  #res h3 {
+    margin-left: 1.5rem;
+  }
 }
 
 
