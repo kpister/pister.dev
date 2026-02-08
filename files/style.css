@@ -2093,6 +2093,122 @@ there.
   margin: 2rem 0;
 }
 
+.blog-mode-status {
+  margin: 0.5rem 0 1.8rem;
+  color: #8f8f8f;
+  font-size: 1.35rem;
+  line-height: 1.5;
+}
+
+.blog-mode-picker {
+  position: relative;
+  display: inline-block;
+  line-height: 1;
+}
+
+.blog-mode-current {
+  border: 1px solid rgba(59, 161, 87, 0.55);
+  background: rgba(59, 161, 87, 0.08);
+  color: #cdeed6;
+  font-size: 0.96rem;
+  line-height: 1;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  height: 32px;
+  padding: 0 0.58rem;
+  border-radius: 999px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  box-sizing: border-box;
+  transition: background 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+}
+
+.blog-mode-current:hover,
+.blog-mode-picker.open .blog-mode-current {
+  background: rgba(59, 161, 87, 0.16);
+  border-color: rgba(59, 161, 87, 0.85);
+  color: #e7f8ec;
+}
+
+.blog-mode-options {
+  position: absolute;
+  top: calc(100% + 0.45rem);
+  left: 0;
+  min-width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  padding: 0.3rem;
+  background: #141414;
+  border: 1px solid #2d5a3b;
+  border-radius: 10px;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.45);
+  z-index: 20;
+}
+
+.blog-mode-options[hidden] {
+  display: none;
+}
+
+.blog-mode-options button {
+  border: 0;
+  background: transparent;
+  color: #9ea9a2;
+  font-size: 0.96rem;
+  font-weight: 700;
+  text-align: left;
+  padding: 0.2rem 0.45rem;
+  line-height: 1;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+.blog-mode-options button[aria-selected="true"] {
+  color: #e6f8eb;
+  background: rgba(59, 161, 87, 0.2);
+}
+
+.blog-mode-options button:hover {
+  color: #d8e9dd;
+  background: rgba(59, 161, 87, 0.12);
+}
+
+.blog-handwritten-note {
+  margin-left: 0.45rem;
+  color: #7f8a83;
+  font-size: 1em;
+  line-height: inherit;
+}
+
+.blog-typed-note {
+  margin-left: 0.45rem;
+  color: #7f8a83;
+  font-size: 1em;
+  line-height: inherit;
+}
+
+.blog-handwritten-view {
+  background: #181818;
+  border: none;
+  border-radius: 8px;
+  padding: 1.2rem;
+  overflow-x: auto;
+}
+
+.blog-content .blog-handwritten-asset {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0;
+  border-radius: 4px;
+  background: transparent;
+}
+
+.blog-typed-view p:last-child {
+  margin-bottom: 0;
+}
+
 .blog-footer {
   margin-top: 5rem;
   padding-top: 2rem;
@@ -2129,5 +2245,28 @@ there.
 
   .blog-content {
     font-size: 1.6rem;
+  }
+
+  .blog-mode-status {
+    font-size: 1.25rem;
+  }
+
+  .blog-mode-current {
+    font-size: 0.9rem;
+    height: 32px;
+    padding: 0 0.5rem;
+  }
+
+  .blog-mode-options button {
+    font-size: 0.88rem;
+    padding: 0.18rem 0.4rem;
+  }
+
+  .blog-handwritten-note {
+    margin-left: 0.35rem;
+  }
+
+  .blog-typed-note {
+    margin-left: 0.35rem;
   }
 }
